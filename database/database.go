@@ -3,6 +3,7 @@ package database
 import (
 	"log"
 	"os"
+
 	"gorm.io/driver/mysql"
 
 	"github.com/maxime-louis14/api-golang/models"
