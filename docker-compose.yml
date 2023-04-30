@@ -25,7 +25,7 @@ services:
       MYSQL_PASSWORD:
       MYSQL_ROOT_PASSWORD: 1234
     ports:
-      - 3336:3336
+      - 8000:8000
     volumes:
       - mysqldb-data:/var/lib/mysql
 
@@ -36,7 +36,7 @@ services:
     environment:
       - PMA_HOST=db
     ports:
-      - 8080:8080
+      - 8080:80
 
 volumes:
   mysqldb-data:

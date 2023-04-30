@@ -9,7 +9,7 @@ type Recette struct {
 	Descriptions string `json:"descriptions"`
 	Ingredients  string `json:"ingredients"`
 	Photos       string `json:"photos"`
-	Directions   string `json:"directions"`
+	Instructions string `json:"instructions"`
 	Page         string `json:"line"`
 	SerialNumber string `json:"serial_number"`
 }
