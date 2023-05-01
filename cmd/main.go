@@ -5,7 +5,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/maxime-louis14/api-golang/database"
-	"github.com/maxime-louis14/api-golang/Routes"
+	"github.com/maxime-louis14/api-golang/routes"
 )
 
 func welcome(c *fiber.Ctx) error {
@@ -22,20 +22,20 @@ func setupRoutes(app *fiber.App) {
 	app.Put("/api/users/:id", routes.UpdateUser)
 	app.Delete("/api/user/:id", routes.DeleteUser)
 	// Product endpoints
-	app.Post("api/recettes", routes.CreateRecette)
-	app.Post("/api/recettes", routes.GetRecette)
+	app.Post("api/recettes", routes.PostRecette)
+	app.Get("/api/recettes", routes.GetRecettes)
 	app.Get("/api/recettes/:id", routes.GetRecette)
 	app.Put("/api/recettes/:id", routes.UpdateRecette)
 	app.Delete("/api/recette/:id", routes.DeleteRecette)
+
+	app.Post("api/ingredients", routes.PostIngredients)
 }
 
 func main() {
 	database.ConnectDb()
-
 	app := fiber.New()
-	
-	setupRoutes(app)
 
+	setupRoutes(app)
 
 	log.Fatal(app.Listen(":3000"))
 }

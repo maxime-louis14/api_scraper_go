@@ -3,7 +3,6 @@ package routes
 import (
 	"encoding/json"
 	"errors"
-	"net/http"
 	"os"
 
 	"github.com/gofiber/fiber/v2"
@@ -15,20 +14,26 @@ type Recette struct {
 	ID           uint   `json:"id"`
 	Name         string `json:"name"`
 	Descriptions string `json:"descriptions"`
-	Ingredients  string `json:"ingredients"`
-	Photos       string `json:"photos"`
-	Instructions string `json:"instructions"`
 	Page         string `json:"line"`
-	SerialNumber string `json:"serial_number"`
 }
 
 func CreateResponseRecette(recetteModel models.Recette) Recette {
-	return Recette{ID: recetteModel.ID, Name: recetteModel.Name, Descriptions: recetteModel.Descriptions, Ingredients: recetteModel.Ingredients, Photos: recetteModel.Photos, Instructions: recetteModel.Instructions, Page: recetteModel.Page, SerialNumber: recetteModel.SerialNumber}
+	return Recette{ID: recetteModel.ID, Name: recetteModel.Name, Descriptions: recetteModel.Descriptions, Page: recetteModel.Page}
 }
 
-func InsertRecettesFromJSON(c *fiber.Ctx) error {
+func CreateRecette(c *fiber.Ctx) error {
+	var recette models.Recette
+	if err := c.BodyParser(&recette); err != nil {
+		return c.Status(400).JSON(err.Error())
+	}
+	database.Database.Db.Create(&recette)
+	responseRecette := CreateResponseRecette(recette)
+	return c.Status(200).JSON(responseRecette)
+}
+
+func PostRecette(c *fiber.Ctx) error {
 	// Ouvrir le fichier data.json
-	file, err := os.Open("/scraper/data.json")
+	file, err := os.Open("data.json")
 	if err != nil {
 		return err
 	}
@@ -44,6 +49,7 @@ func InsertRecettesFromJSON(c *fiber.Ctx) error {
 
 	// Insérer chaque recette dans la base de données MySQL
 	for _, recette := range recettes {
+
 		// Utiliser la méthode Create de GORM pour insérer une recette dans la base de données
 		// '&' est utilisé pour prendre l'adresse de la variable recette, car la méthode Create attend un pointeur de recette.
 		result := database.Database.Db.Create(&recette)
@@ -51,28 +57,19 @@ func InsertRecettesFromJSON(c *fiber.Ctx) error {
 			return result.Error
 		}
 	}
-	return nil
+	// Réponse HTTP avec un message de succès
+	return c.SendString("Recettes ajoutées avec succès")
 }
 
-func CreateRecette(c *fiber.Ctx) error {
-	var recette models.Recette
-	if err := c.BodyParser(&recette); err != nil {
-		return c.Status(400).JSON(err.Error())
+func GetRecettes(c *fiber.Ctx) error {
+	recettes := []models.Recette{}
+	database.Database.Db.Find(&recettes)
+	responseRecettes := []Recette{}
+	for _, recette := range recettes {
+		responseRecette := CreateResponseRecette(recette)
+		responseRecettes = append(responseRecettes, responseRecette)
 	}
-	database.Database.Db.Create(&recette)
-	responseRecette := CreateResponseRecette(recette)
-	return c.Status(200).JSON(responseRecette)
-}
-
-func GetAllRecettes(c *fiber.Ctx) error {
-	var recettes []models.Recette
-	result := database.Database.Db.Find(&recettes)
-	if result.Error != nil {
-		return c.Status(http.StatusInternalServerError).JSON(fiber.Map{
-			"error": "Failed to get recettes from database",
-		})
-	}
-	return c.JSON(recettes)
+	return c.Status(200).JSON(responseRecettes)
 }
 
 func findRecette(id int, recette *models.Recette) error {
@@ -120,12 +117,7 @@ func UpdateRecette(c *fiber.Ctx) error {
 	}
 
 	recette.Name = updateData.Name
-	recette.Descriptions = updateData.Descriptions
-	recette.Ingredients = updateData.Ingredients
-	recette.Photos = updateData.Photos
-	recette.Instructions = updateData.Instructions
 	recette.Page = updateData.Page
-	recette.SerialNumber = updateData.SerialNumber
 
 	database.Database.Db.Save(&recette)
 
@@ -145,5 +137,5 @@ func DeleteRecette(c *fiber.Ctx) error {
 	if err := database.Database.Db.Delete(&recette).Error; err != nil {
 		return c.Status(404).JSON(err.Error())
 	}
-	return c.Status(200).SendString("Successfully Deleted User")
+	return c.Status(200).JSON("Recette supprimée avec succès")
 }

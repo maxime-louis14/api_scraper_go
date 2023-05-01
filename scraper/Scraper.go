@@ -10,9 +10,6 @@ import (
 	"github.com/gocolly/colly"
 )
 
-type data struct {
-	Recettes []recettes `json:"recettes"`
-}
 
 type recettes struct {
 	Name         string `json:"name"`
@@ -28,10 +25,6 @@ var image string
 var link string
 
 func main() {
-
-	allData := data{
-		Recettes: []recettes{},
-	}
 
 	c := colly.NewCollector(
 		colly.AllowedDomains("allrecipes.com", "www.allrecipes.com"),
@@ -62,7 +55,7 @@ func main() {
 			Instructions: h.ChildText("div.recipe__steps"),
 		}
 		fmt.Println(recettes)
-		allData.Recettes = append(allData.Recettes, recettes)
+		allRecettes = append(allRecettes, recettes)
 	})
 
 	c.OnError(func(r *colly.Response, err error) {
@@ -71,7 +64,7 @@ func main() {
 
 	c.Visit("https://www.allrecipes.com/recipes/17562/dinner/")
 
-	content, err := json.Marshal(allData)
+	content, err := json.Marshal(allRecettes)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
