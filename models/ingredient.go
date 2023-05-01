@@ -10,6 +10,6 @@ type Ingredient struct {
 	Ingredients  string  `json:"ingredients"`
 	Photos       string  `json:"photos"`
 	Instructions string  `json:"instructions"`
-	RecetteID    uint    `json:"recette_id"`
-	Recette      Recette `gorm:"foreignKey:RecetteID"`
+	RecetteRefer uint    `json:"recette_id"`
+	Recette      Recette `gorm:"foreignKey:RecetteRefer"`
 }

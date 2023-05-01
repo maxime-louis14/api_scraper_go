@@ -5,10 +5,9 @@ import (
 )
 
 type Recette struct {
-	ID           uint        `json:"id" gorm:"primaryKey"`
+	ID           uint `json:"id" gorm:"primaryKey"`
 	CreatedAt    time.Time
-	Name         string      `json:"name"`
-	Descriptions string      `json:"descriptions"`
-	Page         string      `json:"line"`
-	Ingredients  []Ingredient `gorm:"foreignKey:RecetteRefer"`
+	Name         string       `json:"name"`
+	Descriptions string       `json:"descriptions"`
+	Page         string       `json:"line"`
 }
