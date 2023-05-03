@@ -9,17 +9,6 @@ import (
 	"github.com/maxime-louis14/api-golang/models"
 )
 
-type Ingredient struct {
-	ID           uint   `json:"id" gorm:"primaryKey"`
-	Ingredients  string `json:"ingredients"`
-	Photos       string `json:"photos"`
-	Instructions string `json:"instructions"`
-}
-
-func CreateResponseIngredients(ingredientsModel models.Ingredient) Ingredient {
-	return Ingredient{ID: ingredientsModel.ID, Ingredients: ingredientsModel.Ingredients, Photos: ingredientsModel.Photos, Instructions: ingredientsModel.Instructions}
-}
-
 func PostIngredients(c *fiber.Ctx) error {
 	// Ouvrir le fichier data.json
 	file, err := os.Open("data.json")
@@ -48,4 +37,5 @@ func PostIngredients(c *fiber.Ctx) error {
 	}
 	// Réponse HTTP avec un message de succès
 	return c.SendString("Recettes ajoutées avec succès")
+
 }

@@ -11,10 +11,10 @@ import (
 )
 
 type Recette struct {
-	ID           uint   `json:"id"`
+	ID           int   `json:"id"`
 	Name         string `json:"name"`
 	Descriptions string `json:"descriptions"`
-	Page         string `json:"line"`
+	Page         string `json:"liens"`
 }
 
 func CreateResponseRecette(recetteModel models.Recette) Recette {
