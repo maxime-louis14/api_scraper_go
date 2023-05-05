@@ -3,6 +3,7 @@ package routes
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"os"
 
 	"github.com/gofiber/fiber/v2"
@@ -11,14 +12,13 @@ import (
 )
 
 type Recette struct {
-	ID           int   `json:"id"`
-	Name         string `json:"name"`
-	Descriptions string `json:"descriptions"`
-	Page         string `json:"liens"`
+	Name  string `json:"name"`
+	Link  string `json:"liens"`
+	Image string `json:"image"`
 }
 
 func CreateResponseRecette(recetteModel models.Recette) Recette {
-	return Recette{ID: recetteModel.ID, Name: recetteModel.Name, Descriptions: recetteModel.Descriptions, Page: recetteModel.Page}
+	return Recette{Name: recetteModel.Name, Link: recetteModel.Link}
 }
 
 func CreateRecette(c *fiber.Ctx) error {
@@ -49,7 +49,6 @@ func PostRecette(c *fiber.Ctx) error {
 
 	// Insérer chaque recette dans la base de données MySQL
 	for _, recette := range recettes {
-
 		// Utiliser la méthode Create de GORM pour insérer une recette dans la base de données
 		// '&' est utilisé pour prendre l'adresse de la variable recette, car la méthode Create attend un pointeur de recette.
 		result := database.Database.Db.Create(&recette)
@@ -57,6 +56,8 @@ func PostRecette(c *fiber.Ctx) error {
 			return result.Error
 		}
 	}
+	fmt.Println(recettes)
+
 	// Réponse HTTP avec un message de succès
 	return c.SendString("Recettes ajoutées avec succès")
 }
@@ -108,7 +109,7 @@ func UpdateRecette(c *fiber.Ctx) error {
 		Ingredients  string `json:"ingredients"`
 		Photos       string `json:"photos"`
 		Instructions string `json:"instructions"`
-		Page         string `json:"line"`
+		Link         string `json:"line"`
 		SerialNumber string `json:"serial_number"`
 	}
 	var updateData UpdateRecette
@@ -117,7 +118,7 @@ func UpdateRecette(c *fiber.Ctx) error {
 	}
 
 	recette.Name = updateData.Name
-	recette.Page = updateData.Page
+	recette.Link = updateData.Link
 
 	database.Database.Db.Save(&recette)
 

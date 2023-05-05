@@ -11,17 +11,16 @@ import (
 )
 
 type Recipe struct {
-	Name        string        `json:"name"`
-	Link        string        `json:"link"`
-	Image       string        `json:"image"`
-	Ingredients []Ingredient  `json:"ingredients"`
-	Instruction []Instruction `json:"Instruction"`
+	Name         string        `json:"name"`
+	Link         string        `json:"link"`
+	Image        string        `json:"image"`
+	Ingredients  []Ingredient  `json:"ingredients"`
+	Instructions []Instruction `json:"Instructions"`
 }
 
 type Ingredient struct {
 	Quantity string `json:"quantity"`
 	Unit     string `json:"unit"`
-	Nameig   string `json:"nameig"`
 }
 
 type Instruction struct {
@@ -66,7 +65,10 @@ func main() {
 
 	c.OnHTML("div.mntl-structured-ingredients", func(e *colly.HTMLElement) {
 		ingredients := []Ingredient{}
-		Nameig := e.ChildText("h2.mntl-structured-ingredients__heading")
+
+		// Nameig := e.ChildText("h2.mntl-structured-ingredients__heading")
+		// ingredients = append(ingredients, Ingredient{Nameig: Nameig})
+
 		e.ForEach("li.mntl-structured-ingredients__list-item", func(_ int, ingr *colly.HTMLElement) {
 			quantityElement := ingr.DOM.Find("span[data-ingredient-quantity=true]")
 			unitElement := ingr.DOM.Find("span[data-ingredient-unit=true]")
@@ -74,9 +76,7 @@ func main() {
 			unit := unitElement.Text()
 			ingredients = append(ingredients, Ingredient{Quantity: quantity, Unit: unit})
 		})
-		ingredients = append(ingredients, Ingredient{Nameig: Nameig})
 		recipes[len(recipes)-1].Ingredients = ingredients
-
 	})
 
 	c.OnHTML("div.recipe__steps", func(e *colly.HTMLElement) {
@@ -86,7 +86,7 @@ func main() {
 			description := inst.ChildText("p.mntl-sc-block")
 			instructions = append(instructions, Instruction{Number: number, Description: description})
 		})
-		recipes[len(recipes)-1].Instruction = instructions
+		recipes[len(recipes)-1].Instructions = instructions
 	})
 
 	// Enregistrer la recette dans le fichier JSON
@@ -95,7 +95,6 @@ func main() {
 		if err != nil {
 			fmt.Println(err.Error())
 		}
-
 		os.WriteFile("data.json", content, 0644)
 		fmt.Println("Toutes les recettes ont été enregistrées dans le fichier 'recettes.json'")
 	})

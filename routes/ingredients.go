@@ -2,6 +2,7 @@ package routes
 
 import (
 	"encoding/json"
+	"fmt"
 	"os"
 
 	"github.com/gofiber/fiber/v2"
@@ -17,7 +18,7 @@ func PostIngredients(c *fiber.Ctx) error {
 	}
 	defer file.Close()
 
-	// Décodez les données JSON dans une variable slice de recettes
+	// Décodez les données JSON dans une variable slice de ingredients
 	var ingredients []models.Ingredient
 	decoder := json.NewDecoder(file)
 	err = decoder.Decode(&ingredients)
@@ -26,16 +27,15 @@ func PostIngredients(c *fiber.Ctx) error {
 	}
 
 	// Insérer chaque recette dans la base de données MySQL
-	for _, ingredients := range ingredients {
-
-		// Utiliser la méthode Create de GORM pour insérer une recette dans la base de données
+	for _, ingredient := range ingredients {
 		// '&' est utilisé pour prendre l'adresse de la variable recette, car la méthode Create attend un pointeur de recette.
-		result := database.Database.Db.Create(&ingredients)
+		result := database.Database.Db.Create(&ingredient)
 		if result.Error != nil {
 			return result.Error
 		}
 	}
+
+	fmt.Println(ingredients)
 	// Réponse HTTP avec un message de succès
 	return c.SendString("Recettes ajoutées avec succès")
-
 }
