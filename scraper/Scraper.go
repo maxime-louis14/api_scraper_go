@@ -12,7 +12,7 @@ import (
 
 type Recipe struct {
 	Name         string        `json:"name"`
-	Link         string        `json:"link"`
+	Page         string        `json:"page"`
 	Image        string        `json:"image"`
 	Ingredients  []Ingredient  `json:"ingredients"`
 	Instructions []Instruction `json:"Instructions"`
@@ -44,23 +44,23 @@ func main() {
 
 	// Sélectionner les liens de recette et visiter chaque page de recette
 	c.OnHTML("div.mntl-taxonomysc-article-list-group .mntl-card", func(e *colly.HTMLElement) {
-		link := e.Attr("href")
+		page := e.Attr("href")
 		title := e.ChildText("span.card__title-text")
 		image := e.ChildAttr("img", "data-src")
 
-		recipe := Recipe{Name: title, Link: link, Image: image}
+		recipe := Recipe{Name: title, Page: page, Image: image}
 
 		recipes = append(recipes, recipe)
 
 		fmt.Println("La recette", recipe.Name, "a été collectée")
 
 		// Visiter la page de recette
-		err := c.Visit(link)
+		err := c.Visit(page)
 		if err != nil {
 			log.Println("Erreur lors de la visite de la page de recette: ", err)
 			return
 		}
-		e.Request.Visit(link)
+		e.Request.Visit(page)
 	})
 
 	c.OnHTML("div.mntl-structured-ingredients", func(e *colly.HTMLElement) {

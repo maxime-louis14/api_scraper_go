@@ -2,9 +2,10 @@ package routes
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
+	"log"
 	"os"
+	"strings"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/maxime-louis14/api-golang/database"
@@ -13,7 +14,7 @@ import (
 
 type Recette struct {
 	Name  string `json:"name"`
-	Link  string `json:"liens"`
+	Page  string `json:"page"`
 	Image string `json:"image"`
 }
 
@@ -34,10 +35,6 @@ func CreateResponseIngredient(ingredientModel models.Ingredient) Ingredient {
 
 func CreateResponseInstruction(instructionModel models.Instruction) Instruction {
 	return Instruction{ID: instructionModel.ID, Number: instructionModel.Number, Description: instructionModel.Description}
-}
-
-func CreateResponseRecette(recetteModel models.Recette) Recette {
-	return Recette{Name: recetteModel.Name, Link: recetteModel.Link, Image: recetteModel.Image}
 }
 
 func PostRecette(c *fiber.Ctx) error {
@@ -79,7 +76,7 @@ func GetRecettesDetails(c *fiber.Ctx) error {
 
 	responseRecettes := []struct {
 		Name         string        `json:"name"`
-		Link         string        `json:"liens"`
+		Page         string        `json:"page"`
 		Image        string        `json:"image"`
 		Ingredients  []Ingredient  `json:"ingredients"`
 		Instructions []Instruction `json:"instructions"`
@@ -99,13 +96,13 @@ func GetRecettesDetails(c *fiber.Ctx) error {
 		// créer une réponse contenant toutes les informations de la recette
 		responseRecette := struct {
 			Name         string        `json:"name"`
-			Link         string        `json:"liens"`
+			Page         string        `json:"page"`
 			Image        string        `json:"image"`
 			Ingredients  []Ingredient  `json:"ingredients"`
 			Instructions []Instruction `json:"instructions"`
 		}{
 			Name:         recette.Name,
-			Link:         recette.Link,
+			Page:         recette.Page,
 			Image:        recette.Image,
 			Ingredients:  make([]Ingredient, len(ingredients)),
 			Instructions: make([]Instruction, len(instructions)),
@@ -126,36 +123,72 @@ func GetRecettesDetails(c *fiber.Ctx) error {
 }
 
 func findRecette(id int, recette *models.Recette) error {
-	database.Database.Db.Find(&recette, "id = ?", id)
-	if recette.ID == 0 {
-		return errors.New("Recette does not exist")
+	err := database.Database.Db.
+		Preload("Instructions").
+		Preload("Ingredients").
+		Where("id = ?", id).
+		Order("id DESC").
+		First(recette).Error
+	if err != nil {
+		return err
 	}
 	return nil
 }
 
+func CreateResponseRecette(recette models.Recette) interface{} {
+	responseRecette := struct {
+		ID           uint                 `json:"id"`
+		Name         string               `json:"name"`
+		Page         string               `json:"page"`
+		Image        string               `json:"image"`
+		Ingredients  []models.Ingredient  `json:"ingredients"`
+		Instructions []models.Instruction `json:"instructions"`
+	}{
+		ID:           recette.ID,
+		Name:         recette.Name,
+		Page:         recette.Page,
+		Image:        recette.Image,
+		Ingredients:  recette.Ingredients,
+		Instructions: recette.Instructions,
+	}
+
+	return responseRecette
+}
+
 func GetRecette(c *fiber.Ctx) error {
 	id, err := c.ParamsInt("id")
-	var recette models.Recette
 	if err != nil {
 		return c.Status(400).JSON("Veuillez vous assurer que !id est un interger")
 	}
+
+	var recette models.Recette
 	if err := findRecette(id, &recette); err != nil {
 		return c.Status(400).JSON(err.Error())
 	}
+
 	responseRecette := CreateResponseRecette(recette)
 	return c.Status(200).JSON(responseRecette)
 }
 
 func GetRecetteByName(c *fiber.Ctx) error {
-	name := c.Params("name")
+	name := strings.ReplaceAll(c.Params("name"), "%20", " ")
+
+	// fmt.Printf("Searching for recipe with name: %s\n", name)
 
 	recette := models.Recette{}
-	err := database.Database.Db.Where("name = ?", name).First(&recette)
+	err := database.Database.Db.
+		Preload("Instructions").
+		Preload("Ingredients").
+		Where("name LIKE ?", "%"+name+"%").
+		First(&recette)
+
 	if err != nil {
 		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{
 			"message": "Recipe not found",
 		})
 	}
+
+	log.Println(recette)
 
 	responseRecette := struct {
 		Recette      models.Recette       `json:"recette"`
@@ -168,6 +201,7 @@ func GetRecetteByName(c *fiber.Ctx) error {
 	}
 
 	return c.JSON(responseRecette)
+
 }
 
 func GetRecettesIngredient(c *fiber.Ctx) error {

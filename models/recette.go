@@ -10,7 +10,7 @@ type Recette struct {
 	gorm.Model
 	Instructions []Instruction
 	Name         string `json:"name"`
-	Link         string `json:"link"`
+	Page         string `json:"page"`
 	Image        string `json:"image"`
 	Ingredients  []Ingredient
 	CreatedAt    time.Time

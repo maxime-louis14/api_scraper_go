@@ -1,7 +1,7 @@
 [
   {
     "name": "Chicken Minestrone Soup",
-    "link": "https://www.allrecipes.com/recipe/8499644/chicken-minestrone-soup/",
+    "page": "https://www.allrecipes.com/recipe/8499644/chicken-minestrone-soup/",
     "image": "https://www.allrecipes.com/thmb/GWv_sPEam8WpIoml6K1NtYDSvZY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/8499644_Chicken-Minestrone-Soup_lutzflcat_1x1-06fd9f7eefa647029953cc331b5e3120.jpg",
     "ingredients": [
       { "quantity": "4", "unit": "tablespoons" },
@@ -44,7 +44,7 @@
   },
   {
     "name": "Roasted Broccoli Soup",
-    "link": "https://www.allrecipes.com/recipe/8532495/roasted-broccoli-soup/",
+    "page": "https://www.allrecipes.com/recipe/8532495/roasted-broccoli-soup/",
     "image": "https://www.allrecipes.com/thmb/ib45T1wECZTgjNIPZKVllTNx50M=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/8532495-Roasted-Broccoli-Soup-France-C-1x1-1-8ff487cbb75c4e34bc672491e118232a.jpg",
     "ingredients": [
       { "quantity": "5", "unit": "cups" },
@@ -81,7 +81,7 @@
   },
   {
     "name": "Dump-and-Go Instant Pot Tortilla Soup",
-    "link": "https://www.allrecipes.com/recipe/8532956/dump-and-go-instant-pot-tortilla-soup/",
+    "page": "https://www.allrecipes.com/recipe/8532956/dump-and-go-instant-pot-tortilla-soup/",
     "image": "https://www.allrecipes.com/thmb/jaoqbceIgpAcCqvT8hcRbNPmIgg=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/8532956-Dump-and-Go-Instant-Pot-Tortilla-Soup-1x1-1-a05978662a374d6f82d4a6181a849d0c.jpg",
     "ingredients": [
       { "quantity": "2", "unit": "(14.5 ounce) cans" },
@@ -116,7 +116,7 @@
   },
   {
     "name": "Copycat Panera Broccoli Cheddar Soup",
-    "link": "https://www.allrecipes.com/recipe/235874/copycat-panera-broccoli-cheddar-soup/",
+    "page": "https://www.allrecipes.com/recipe/235874/copycat-panera-broccoli-cheddar-soup/",
     "image": "https://www.allrecipes.com/thmb/2398SCTDl5CsPXjmSnwe8xohu4Q=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/8945082-110abc1f67d64c368d838d09a74c4213.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "tablespoon" },
@@ -152,7 +152,7 @@
   },
   {
     "name": "Slow Cooker Taco Soup",
-    "link": "https://www.allrecipes.com/recipe/16678/slow-cooker-taco-soup/",
+    "page": "https://www.allrecipes.com/recipe/16678/slow-cooker-taco-soup/",
     "image": "https://www.allrecipes.com/thmb/CQ8-CXE4XVFKnFuJaS8GELrDTaI=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/16678-slow-cooker-taco-soup-ddmfs-beauty-3x4-4b64d4cf431c448bb86d440086e42e5a.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "pound" },
@@ -184,7 +184,7 @@
   },
   {
     "name": "Super-Delicious Zuppa Toscana",
-    "link": "https://www.allrecipes.com/recipe/143069/super-delicious-zuppa-toscana/",
+    "page": "https://www.allrecipes.com/recipe/143069/super-delicious-zuppa-toscana/",
     "image": "https://www.allrecipes.com/thmb/AR64V1Nm_N6tdYPr2IU23IzE2jo=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/Super-Delicious-Zuppa-Toscana-e0ecd2a124674b84b63570320d20ca9b.jpeg",
     "ingredients": [
       { "quantity": "1", "unit": "pound" },
@@ -214,7 +214,7 @@
   },
   {
     "name": "Homemade Chicken Soup",
-    "link": "https://www.allrecipes.com/recipe/8814/homemade-chicken-soup/",
+    "page": "https://www.allrecipes.com/recipe/8814/homemade-chicken-soup/",
     "image": "https://www.allrecipes.com/thmb/TNcMAQnlyzDB3rrGURdvB72tal4=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/9139229-87abfabfbabb41c89069c83a1d023f45.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "(3 pound)" },
@@ -246,7 +246,7 @@
   },
   {
     "name": "Rich and Simple French Onion Soup",
-    "link": "https://www.allrecipes.com/recipe/13309/rich-and-simple-french-onion-soup/",
+    "page": "https://www.allrecipes.com/recipe/13309/rich-and-simple-french-onion-soup/",
     "image": "https://www.allrecipes.com/thmb/xUJhPzm0GFTncI0_4Gj86aKG9io=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/13309-rich-and-simple-french-onion-soup-DDMFS-4x3-31ad7eaa56234d20ae35c3940fd03f36.jpg",
     "ingredients": [
       { "quantity": "½", "unit": "cup" },
@@ -288,7 +288,7 @@
   },
   {
     "name": "Miso Soup",
-    "link": "https://www.allrecipes.com/recipe/13107/miso-soup/",
+    "page": "https://www.allrecipes.com/recipe/13107/miso-soup/",
     "image": "https://www.allrecipes.com/thmb/i8tKRJzuFDZI530NoJoxLfKy1UI=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/13107-miso-soup-Melissa-Goff-1x1-1-2962011c74e340fd8afbfaf43ac4b6f2.jpg",
     "ingredients": [
       { "quantity": "4", "unit": "cups" },
@@ -306,7 +306,7 @@
   },
   {
     "name": "Creamy Roasted Parsnip Soup",
-    "link": "https://www.allrecipes.com/recipe/154833/creamy-roasted-parsnip-soup/",
+    "page": "https://www.allrecipes.com/recipe/154833/creamy-roasted-parsnip-soup/",
     "image": "https://www.allrecipes.com/thmb/k9MB_PQ6Ostj7si2p6FP6nm8oaM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/1055457-c222f95fb71347fe89f389a286a2de72.jpg",
     "ingredients": [
       { "quantity": "2", "unit": "pounds" },
@@ -361,7 +361,7 @@
   },
   {
     "name": "Noodle Bowl Formula",
-    "link": "https://www.allrecipes.com/recipe/8493264/noodle-bowl-formula/",
+    "page": "https://www.allrecipes.com/recipe/8493264/noodle-bowl-formula/",
     "image": "https://www.allrecipes.com/thmb/bM5BhzRQdy6-LAR5xKersususwk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/Noodle-Bowl-Formula-1x1-1-ebc6eac6db96472fb4dea3fa6b1e6669.jpg",
     "ingredients": [
       { "quantity": "3", "unit": "cups" },
@@ -390,7 +390,7 @@
   },
   {
     "name": "Creamy Chicken Ramen Soup with Dill",
-    "link": "https://www.allrecipes.com/recipe/8495600/creamy-chicken-ramen-soup-with-dill/",
+    "page": "https://www.allrecipes.com/recipe/8495600/creamy-chicken-ramen-soup-with-dill/",
     "image": "https://www.allrecipes.com/thmb/z1ZY6DdWMFCYtCpjASriq9LsbJs=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/Creamy-Dill-Chicken-Ramen-Soup-1x1-1-f4d09114489044efaeb051060cb31e1c.jpg",
     "ingredients": [
       { "quantity": "1 ¾", "unit": "cups" },
@@ -409,7 +409,7 @@
   },
   {
     "name": "Creamy Slow Cooker Potato Cheese Soup",
-    "link": "https://www.allrecipes.com/recipe/25666/creamy-slow-cooker-potato-cheese-soup/",
+    "page": "https://www.allrecipes.com/recipe/25666/creamy-slow-cooker-potato-cheese-soup/",
     "image": "https://www.allrecipes.com/thmb/4ZwL_myGs9gC8sXQvBWknlPpceE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/837968-961c168c278f46de8fb6b6e054fa2126.jpg",
     "ingredients": [
       { "quantity": "¼", "unit": "cup" },
@@ -449,7 +449,7 @@
   },
   {
     "name": "Butternut Squash Soup",
-    "link": "https://www.allrecipes.com/recipe/77981/butternut-squash-soup-ii/",
+    "page": "https://www.allrecipes.com/recipe/77981/butternut-squash-soup-ii/",
     "image": "https://www.allrecipes.com/thmb/OaIjIGV-gje0zQ1BTvSDfVPu6Ug=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/77981-butternut-squash-soup-ii-DDMFS-4x3-90a6bf5fa88346699bf41d502a029798.jpg",
     "ingredients": [
       { "quantity": "2", "unit": "tablespoons" },
@@ -480,7 +480,7 @@
   },
   {
     "name": "Homemade Dumplings",
-    "link": "https://www.allrecipes.com/recipe/6900/dumplings/",
+    "page": "https://www.allrecipes.com/recipe/6900/dumplings/",
     "image": "https://www.allrecipes.com/thmb/ZZ_HGvR-7BBYBM-mrfan6F-hLMQ=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/6900-dumplings-DDMFS-4x3-c03fe714205d4f24bd74b99768142864.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "cup" },
@@ -508,7 +508,7 @@
   },
   {
     "name": "Best Cream Of Broccoli Soup",
-    "link": "https://www.allrecipes.com/recipe/13313/best-cream-of-broccoli-soup/",
+    "page": "https://www.allrecipes.com/recipe/13313/best-cream-of-broccoli-soup/",
     "image": "https://www.allrecipes.com/thmb/vuZXq2rJQjQmmk0PThOqCA-Kfk0=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/13313-best-cream-of-broccoli-soup-AllrecipesMagazine-4x3-495e6329745545a28c2a9b4e6ee3fab6.jpg",
     "ingredients": [
       { "quantity": "5", "unit": "tablespoons" },
@@ -543,7 +543,7 @@
   },
   {
     "name": "Quick and Easy Chicken Noodle Soup",
-    "link": "https://www.allrecipes.com/recipe/26460/quick-and-easy-chicken-noodle-soup/",
+    "page": "https://www.allrecipes.com/recipe/26460/quick-and-easy-chicken-noodle-soup/",
     "image": "https://www.allrecipes.com/thmb/6ZReR5BmphSRwPQELsjT_M32eMw=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/26460-quick-and-easy-chicken-noodle-soup-allrecipes-1x1-1-b88125437574471db3e114c40bc6928e.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "tablespoon" },
@@ -572,7 +572,7 @@
   },
   {
     "name": "Split Pea Soup",
-    "link": "https://www.allrecipes.com/recipe/13384/split-pea-soup/",
+    "page": "https://www.allrecipes.com/recipe/13384/split-pea-soup/",
     "image": "https://www.allrecipes.com/thmb/enCoGmye4geVOBrcfzFnSlRRuwI=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/Split-Pea-Soup-Maggie-Stryjewska-Kara-2afe02a1fb5942a4a4ac5d5582acfba6.jpg",
     "ingredients": [
       { "quantity": "2 ¼", "unit": "cups" },
@@ -603,7 +603,7 @@
   },
   {
     "name": "Basic Ham and Bean Soup",
-    "link": "https://www.allrecipes.com/recipe/17628/basic-ham-and-bean-soup/",
+    "page": "https://www.allrecipes.com/recipe/17628/basic-ham-and-bean-soup/",
     "image": "https://www.allrecipes.com/thmb/BDaPCBwly_pQlnSsbEGJ47m0mnM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/1050605-f4fe2508807a469eb124d77e2eef9995.jpg",
     "ingredients": [
       { "quantity": "8", "unit": "cups" },
@@ -636,7 +636,7 @@
   },
   {
     "name": "Turkey Carcass Soup",
-    "link": "https://www.allrecipes.com/recipe/218804/turkey-carcass-soup/",
+    "page": "https://www.allrecipes.com/recipe/218804/turkey-carcass-soup/",
     "image": "https://www.allrecipes.com/thmb/RgxgzLEmRM1ifZ_Rb6iCJfPgcXE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/218804-TurkeyCarcassSoup-mfs-1x1-1727-892954e036cb44efa5aeb313e783d168.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "" },
@@ -680,7 +680,7 @@
   },
   {
     "name": "Fresh Tomato Soup",
-    "link": "https://www.allrecipes.com/recipe/39544/garden-fresh-tomato-soup/",
+    "page": "https://www.allrecipes.com/recipe/39544/garden-fresh-tomato-soup/",
     "image": "https://www.allrecipes.com/thmb/Lt0ooQlefa4gwL3wNPZvJqDf4RY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/39544-Garden-Fresh-Tomato-Soup-DDMFS-4x3-b8e94cf7ab8e42f4b79042fc0df55546.jpg",
     "ingredients": [
       { "quantity": "4", "unit": "cups" },
@@ -719,7 +719,7 @@
   },
   {
     "name": "Classic Minestrone Soup",
-    "link": "https://www.allrecipes.com/recipe/255650/classic-minestrone-soup/",
+    "page": "https://www.allrecipes.com/recipe/255650/classic-minestrone-soup/",
     "image": "https://www.allrecipes.com/thmb/n0Mdk3KRotoNSaj7O0GUfcruoNA=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/4022830-5483561f4bd648f6a9433ce8c34cdd05.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "tablespoon" },
@@ -751,7 +751,7 @@
   },
   {
     "name": "Ham and Split Pea Soup Recipe — A Great Soup",
-    "link": "https://www.allrecipes.com/recipe/219170/ham-and-split-pea-soup-recipe-a-great-soup/",
+    "page": "https://www.allrecipes.com/recipe/219170/ham-and-split-pea-soup-recipe-a-great-soup/",
     "image": "https://www.allrecipes.com/thmb/g2hfh4vobEF2VcQd8hAXuj-RZiw=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/1508123-ham-and-split-pea-soup-recipe-a-great-soup-kimscookingnow-1x1-1-347c4e1892a04d28af2bdcc7f59de965.jpg",
     "ingredients": [
       { "quantity": "2", "unit": "tablespoons" },
@@ -778,7 +778,7 @@
   },
   {
     "name": "My Best Clam Chowder",
-    "link": "https://www.allrecipes.com/recipe/13041/my-best-clam-chowder/",
+    "page": "https://www.allrecipes.com/recipe/13041/my-best-clam-chowder/",
     "image": "https://www.allrecipes.com/thmb/dTanu5BF4ZxtMuiawRpStevLoks=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/My-Best-Clam-Chowder-5f71619aaa3e436fa4d15269b8610d38.jpg",
     "ingredients": [
       { "quantity": "2", "unit": "cups" },
@@ -811,7 +811,7 @@
   },
   {
     "name": "Lentil Soup",
-    "link": "https://www.allrecipes.com/recipe/13978/lentil-soup/",
+    "page": "https://www.allrecipes.com/recipe/13978/lentil-soup/",
     "image": "https://www.allrecipes.com/thmb/Tgy6PfLgFSpjmF2LoxAvn83rbxM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/13978-lentil-soup-DDMFS-4x3-edfa47fc6b234e6b8add24d44c036d43.jpg",
     "ingredients": [
       { "quantity": "¼", "unit": "cup" },
@@ -856,7 +856,7 @@
   },
   {
     "name": "Caldo de Res (Mexican Beef Soup)",
-    "link": "https://www.allrecipes.com/recipe/85055/caldo-de-res-mexican-beef-soup/",
+    "page": "https://www.allrecipes.com/recipe/85055/caldo-de-res-mexican-beef-soup/",
     "image": "https://www.allrecipes.com/thmb/7Ngr5_yciDf2fgKpFSkGGndSGN8=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/5960360-ef14a9da000d46c59a04eb7889c86167.jpg",
     "ingredients": [
       { "quantity": "2", "unit": "pounds" },
@@ -904,7 +904,7 @@
   },
   {
     "name": "Cabbage Fat-Burning Soup",
-    "link": "https://www.allrecipes.com/recipe/13116/cabbage-fat-burning-soup/",
+    "page": "https://www.allrecipes.com/recipe/13116/cabbage-fat-burning-soup/",
     "image": "https://www.allrecipes.com/thmb/aNvqpUmNqqlVR6d53sq5oysD1EI=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/13116-Cabbage-Fat-Burning-Soup-466e736325024f16bac9096f1ddd625d.jpg",
     "ingredients": [
       { "quantity": "10", "unit": "stalks" },
@@ -932,7 +932,7 @@
   },
   {
     "name": "Delicious Ham and Potato Soup",
-    "link": "https://www.allrecipes.com/recipe/56927/delicious-ham-and-potato-soup/",
+    "page": "https://www.allrecipes.com/recipe/56927/delicious-ham-and-potato-soup/",
     "image": "https://www.allrecipes.com/thmb/vyvqwS3MlJ0NAnUrDNXTaQVQE_0=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/962656-aba3fc46b0b34456add8cfb9ca68572a.jpg",
     "ingredients": [
       { "quantity": "3 ½", "unit": "cups" },
@@ -964,7 +964,7 @@
   },
   {
     "name": "Slow Cooker Chicken and Dumplings",
-    "link": "https://www.allrecipes.com/recipe/8941/slow-cooker-chicken-and-dumplings/",
+    "page": "https://www.allrecipes.com/recipe/8941/slow-cooker-chicken-and-dumplings/",
     "image": "https://www.allrecipes.com/thmb/fgBF_51TantVoHDlro1HA9xGqOA=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/8941-slow-cooker-chicken-and-dumplings-DDMFS-4x3-0be0b1895efe4983acfc38ad3acc0fa2.jpg",
     "ingredients": [
       { "quantity": "4", "unit": "" },
@@ -988,7 +988,7 @@
   },
   {
     "name": "Ukrainian Red Borscht Soup",
-    "link": "https://www.allrecipes.com/recipe/84450/ukrainian-red-borscht-soup/",
+    "page": "https://www.allrecipes.com/recipe/84450/ukrainian-red-borscht-soup/",
     "image": "https://www.allrecipes.com/thmb/CJcrDAbM_uQ4npebGAzmE8ZdMK8=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/Ukrainian-Red-Borscht-Soup-8507ee14f68a439387a170098e8f65b4.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "(16 ounce) package" },
@@ -1040,7 +1040,7 @@
   },
   {
     "name": "The Best Thai Coconut Soup",
-    "link": "https://www.allrecipes.com/recipe/146035/the-best-thai-coconut-soup/",
+    "page": "https://www.allrecipes.com/recipe/146035/the-best-thai-coconut-soup/",
     "image": "https://www.allrecipes.com/thmb/RkShj_QqvlqFsoBE3h-namtHaL0=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/2319909-the-best-thai-coconut-soup-Aja-1x1-1-d2385a72da884e75a7364d6ecca5680e.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "tablespoon" },
@@ -1078,7 +1078,7 @@
   },
   {
     "name": "Baked Potato Soup",
-    "link": "https://www.allrecipes.com/recipe/12997/baked-potato-soup-i/",
+    "page": "https://www.allrecipes.com/recipe/12997/baked-potato-soup-i/",
     "image": "https://www.allrecipes.com/thmb/mjOd6hMf3xB0QvTBfjflyYut2MM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/5867379-361fd5f1eb254d38b7913e0abfaee07a.jpg",
     "ingredients": [
       { "quantity": "12", "unit": "slices" },
@@ -1113,7 +1113,7 @@
   },
   {
     "name": "Caldo de Pollo",
-    "link": "https://www.allrecipes.com/recipe/231097/caldo-de-pollo/",
+    "page": "https://www.allrecipes.com/recipe/231097/caldo-de-pollo/",
     "image": "https://www.allrecipes.com/thmb/C9m1P_rjqmTgcPjEJBx8XSu72HA=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/4873232-76e76e7956724164b937fb4151a9c1f3.jpg",
     "ingredients": [
       { "quantity": "5", "unit": "pounds" },
@@ -1150,7 +1150,7 @@
   },
   {
     "name": "Chef John's Creamy Mushroom Soup",
-    "link": "https://www.allrecipes.com/recipe/235589/chef-johns-creamy-mushroom-soup/",
+    "page": "https://www.allrecipes.com/recipe/235589/chef-johns-creamy-mushroom-soup/",
     "image": "https://www.allrecipes.com/thmb/tF_zRWmuolIGtdc1eHtl0A9amls=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/235589-chef-johns-creamy-mushroom-soup-DDMFS-4x3-14854a8dc51c4c4c80cc5631299a873b.jpg",
     "ingredients": [
       { "quantity": "¼", "unit": "cup" },
@@ -1200,7 +1200,7 @@
   },
   {
     "name": "Broccoli Cheese Soup",
-    "link": "https://www.allrecipes.com/recipe/13045/broccoli-cheese-soup/",
+    "page": "https://www.allrecipes.com/recipe/13045/broccoli-cheese-soup/",
     "image": "https://www.allrecipes.com/thmb/chiDzBy67YIyV3RFx_8P5uZ4tP0=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/306621-6cc3036979634712b03a659c888438c4.jpg",
     "ingredients": [
       { "quantity": "½", "unit": "cup" },
@@ -1230,7 +1230,7 @@
   },
   {
     "name": "Cream of Mushroom Soup",
-    "link": "https://www.allrecipes.com/recipe/13096/cream-of-mushroom-soup-i/",
+    "page": "https://www.allrecipes.com/recipe/13096/cream-of-mushroom-soup-i/",
     "image": "https://www.allrecipes.com/thmb/OAusbC9YR23GyWLpV4RUAAkDM30=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/94846-582612d0928a43df80f4806031c781ae.jpg",
     "ingredients": [
       { "quantity": "5", "unit": "cups" },
@@ -1269,7 +1269,7 @@
   },
   {
     "name": "Day-After-Thanksgiving Turkey Carcass Soup",
-    "link": "https://www.allrecipes.com/recipe/130979/day-after-thanksgiving-turkey-carcass-soup/",
+    "page": "https://www.allrecipes.com/recipe/130979/day-after-thanksgiving-turkey-carcass-soup/",
     "image": "https://www.allrecipes.com/thmb/NBaMsMlqzyiTLaHUR2j4rt2VCng=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/130979-day-after-thanksgiving-turkey-carcass-soup-vat-4X3-3-eb71679adbef4c11a975c0acde2b7b58.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "" },
@@ -1317,7 +1317,7 @@
   },
   {
     "name": "Hearty Barley Turkey Soup",
-    "link": "https://www.allrecipes.com/recipe/230904/hearty-barley-turkey-soup/",
+    "page": "https://www.allrecipes.com/recipe/230904/hearty-barley-turkey-soup/",
     "image": "https://www.allrecipes.com/thmb/trP2cCEmbEDRecmVo3t7u3NeJvE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/230904-hearty-barley-turkey-soup-vat-09-2x1-1-2b9bdd76f2d54ecca87cc2fa945377a0.jpg",
     "ingredients": [
       { "quantity": "5", "unit": "quarts" },
@@ -1368,7 +1368,7 @@
   },
   {
     "name": "Chicken Tortilla Soup",
-    "link": "https://www.allrecipes.com/recipe/13351/chicken-tortilla-soup-i/",
+    "page": "https://www.allrecipes.com/recipe/13351/chicken-tortilla-soup-i/",
     "image": "https://www.allrecipes.com/thmb/7oiCJLefeQOjBOuBBS8wo5_IqpU=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/13351-chicken-tortilla-soup-i-DDMFS-4x3-746173decf5548e581fd08e713a8adba.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "tablespoon" },
@@ -1412,7 +1412,7 @@
   },
   {
     "name": "Healing Cabbage Soup",
-    "link": "https://www.allrecipes.com/recipe/82923/healing-cabbage-soup/",
+    "page": "https://www.allrecipes.com/recipe/82923/healing-cabbage-soup/",
     "image": "https://www.allrecipes.com/thmb/Nmoh5SLuyXMkQJA4R7SPvrzrNG4=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/82923-healing-cabbage-soup-DDMFS-4x3-3a90f759a83b41e08810d1393d8929ee.jpg",
     "ingredients": [
       { "quantity": "3", "unit": "tablespoons" },
@@ -1443,7 +1443,7 @@
   },
   {
     "name": "Chicken Tinola",
-    "link": "https://www.allrecipes.com/recipe/212929/chicken-tinola/",
+    "page": "https://www.allrecipes.com/recipe/212929/chicken-tinola/",
     "image": "https://www.allrecipes.com/thmb/DjTCUY1sKC02mNm8XhAeJXZXLdE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/212929-chicken-tinola-ddmfs-beauty-3x4-c57e44790b5a45229744f8f8746e0ce4.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "tablespoon" },
@@ -1480,7 +1480,7 @@
   },
   {
     "name": "Bean Soup",
-    "link": "https://www.allrecipes.com/recipe/13346/bean-soup/",
+    "page": "https://www.allrecipes.com/recipe/13346/bean-soup/",
     "image": "https://www.allrecipes.com/thmb/-DWfQuzQP4dgrROdbruoSm1y0Ig=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/7633499-32a2f59c682740d7867b5903da91c37e.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "(16 ounce) package" },
@@ -1515,7 +1515,7 @@
   },
   {
     "name": "Incredibly Easy Chicken and Noodles",
-    "link": "https://www.allrecipes.com/recipe/17846/incredibly-easy-chicken-and-noodles/",
+    "page": "https://www.allrecipes.com/recipe/17846/incredibly-easy-chicken-and-noodles/",
     "image": "https://www.allrecipes.com/thmb/P-9Q46dbQ_wOX2Tayu5tE8w8vKo=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/5993154-incredibly-easy-chicken-and-noodles-Becky-Webster-1x1-1-d9c50a9511e74c41829cae155455410c.jpg",
     "ingredients": [
       { "quantity": "3", "unit": "(14.5 ounce) cans" },
@@ -1540,7 +1540,7 @@
   },
   {
     "name": "Cioppino",
-    "link": "https://www.allrecipes.com/recipe/12816/cioppino/",
+    "page": "https://www.allrecipes.com/recipe/12816/cioppino/",
     "image": "https://www.allrecipes.com/thmb/oE7DHKh07mzqk3POlY0k7nt4ZKk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/12816-cioppino-DDMFS-4x3-39531ec5acc749b9a797de26fa0047d5.jpg",
     "ingredients": [
       { "quantity": "¾", "unit": "cup" },
@@ -1580,7 +1580,7 @@
   },
   {
     "name": "Italian Wedding Soup",
-    "link": "https://www.allrecipes.com/recipe/13024/italian-wedding-soup-i/",
+    "page": "https://www.allrecipes.com/recipe/13024/italian-wedding-soup-i/",
     "image": "https://www.allrecipes.com/thmb/3l8mA1C9tRXrSaXfLgJr_lf_ISo=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/13024-ItalianWeddingSoup-1-mfs-1X1-1030-e5151c01fa0543d6bdb736ad01071828.jpg",
     "ingredients": [
       { "quantity": "½", "unit": "pound" },
@@ -1612,7 +1612,7 @@
   },
   {
     "name": "Sausage, Potato and Kale Soup",
-    "link": "https://www.allrecipes.com/recipe/231287/sausage-potato-and-kale-soup/",
+    "page": "https://www.allrecipes.com/recipe/231287/sausage-potato-and-kale-soup/",
     "image": "https://www.allrecipes.com/thmb/WGkgmgIcQUfvLXQFMqcXv4lkxCU=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/7844203-sausage-potato-and-kale-soup-Lena-Hilton-1x1-1-6fd3c60d802c4e8d9d6eb057ce48006c.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "pound" },
@@ -1643,7 +1643,7 @@
   },
   {
     "name": "Slow Cooker French Onion Soup",
-    "link": "https://www.allrecipes.com/recipe/228859/slow-cooker-french-onion-soup/",
+    "page": "https://www.allrecipes.com/recipe/228859/slow-cooker-french-onion-soup/",
     "image": "https://www.allrecipes.com/thmb/WftCWuWdNu9Zo1kkBSkiI1UsBDI=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/4487386_Slow-Cooker-French-Onion-Soup-1x1-1-9cefee71fa7f42e2aa32aa71485aba68.jpg",
     "ingredients": [
       { "quantity": "6", "unit": "tablespoons" },
@@ -1690,7 +1690,7 @@
   },
   {
     "name": "Ham and Beans",
-    "link": "https://www.allrecipes.com/recipe/21403/ham-and-beans/",
+    "page": "https://www.allrecipes.com/recipe/21403/ham-and-beans/",
     "image": "https://www.allrecipes.com/thmb/_EJ-ypaGe3d8bFclyhUGLlyN6fU=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/813105-7e3e8fcd1aaf49bab3900c02db1476f2.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "pound" },
@@ -1715,7 +1715,7 @@
   },
   {
     "name": "New England Clam Chowder",
-    "link": "https://www.allrecipes.com/recipe/13078/new-england-clam-chowder-i/",
+    "page": "https://www.allrecipes.com/recipe/13078/new-england-clam-chowder-i/",
     "image": "https://www.allrecipes.com/thmb/6eA-Ph4xVKeOX86by3xdLU65Lhs=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/4487717-new-england-clam-chowder-Solmari-1x1-1-f10e13140fa14c99b639e12012e5bcb8.jpg",
     "ingredients": [
       { "quantity": "4", "unit": "slices" },
@@ -1745,7 +1745,7 @@
   },
   {
     "name": "Albondigas",
-    "link": "https://www.allrecipes.com/recipe/62642/albondigas/",
+    "page": "https://www.allrecipes.com/recipe/62642/albondigas/",
     "image": "https://www.allrecipes.com/thmb/Zvs9DNinUleikt8Xp2cfDKeJS3o=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/62642-albondigas-DDMFS-4x3-b82436562afb4e1587841a5cb5cb2d53.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "quart" },
@@ -1781,7 +1781,7 @@
   },
   {
     "name": "Dry Onion Soup Mix",
-    "link": "https://www.allrecipes.com/recipe/217155/dry-onion-soup-mix/",
+    "page": "https://www.allrecipes.com/recipe/217155/dry-onion-soup-mix/",
     "image": "https://www.allrecipes.com/thmb/hwDOupYF0MgFNnK7BakuTrOzbTo=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/7401695-59662f0f08fc4e06b9d25322ee6b8538.jpg",
     "ingredients": [
       { "quantity": "¼", "unit": "cup" },
@@ -1805,7 +1805,7 @@
   },
   {
     "name": "Mulligatawny Soup",
-    "link": "https://www.allrecipes.com/recipe/13087/mulligatawny-soup-i/",
+    "page": "https://www.allrecipes.com/recipe/13087/mulligatawny-soup-i/",
     "image": "https://www.allrecipes.com/thmb/KuCSZwrMmivlogqJJEBs9ChwNHI=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/804799-33945c287a0d46b4acce8f0247ebf88c.jpg",
     "ingredients": [
       { "quantity": "½", "unit": "cup" },
@@ -1839,7 +1839,7 @@
   },
   {
     "name": "Super Easy Chicken and Dumplings",
-    "link": "https://www.allrecipes.com/recipe/218562/super-easy-chicken-and-dumplings/",
+    "page": "https://www.allrecipes.com/recipe/218562/super-easy-chicken-and-dumplings/",
     "image": "https://www.allrecipes.com/thmb/Fmu2ajS9ToLCFp2LHwNFbyY8rm8=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/8572612-super-easy-chicken-and-dumplings-celeste-4x3-1-d27ec58c56d645e78aa20d981c6973a1.jpg",
     "ingredients": [
       { "quantity": "2", "unit": "(10.5 ounce) cans" },
@@ -1864,7 +1864,7 @@
   },
   {
     "name": "How to Make Homemade Pho (Authentic)",
-    "link": "https://www.allrecipes.com/recipe/228443/authentic-pho/",
+    "page": "https://www.allrecipes.com/recipe/228443/authentic-pho/",
     "image": "https://www.allrecipes.com/thmb/bYjVwF1pYilCX5WMjRhhdtFpXRc=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/228443-authentic-pho-DDMFS-4x3-0523f6531ccf4dbeb4b5bde52e007b1e.jpg",
     "ingredients": [
       { "quantity": "4", "unit": "pounds" },
@@ -1926,7 +1926,7 @@
   },
   {
     "name": "Ham Bone and Green Split Pea Soup",
-    "link": "https://www.allrecipes.com/recipe/262028/ham-bone-and-green-split-pea-soup/",
+    "page": "https://www.allrecipes.com/recipe/262028/ham-bone-and-green-split-pea-soup/",
     "image": "https://www.allrecipes.com/thmb/tufAjRk-QpvRAe0c1SgkPwXzsvA=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/1084561-ham-bone-and-green-split-pea-soup-Mark-4x3-1-8655e01b49554e0e8d965b107da28d85.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "teaspoon" },
@@ -1960,7 +1960,7 @@
   },
   {
     "name": "Beef Barley Vegetable Soup",
-    "link": "https://www.allrecipes.com/recipe/13023/beef-barley-vegetable-soup/",
+    "page": "https://www.allrecipes.com/recipe/13023/beef-barley-vegetable-soup/",
     "image": "https://www.allrecipes.com/thmb/sg9S1G4AoRhiL9yQMLthEXHWb4s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/13023-beef-barley-vegetable-soup-ddmfs-3X4-5181-345e847a4699417fb369ac25ec586eb0.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "(3 pound)" },
@@ -2003,7 +2003,7 @@
   },
   {
     "name": "How to Make Tomato Bisque",
-    "link": "https://www.allrecipes.com/recipe/234914/how-to-make-tomato-bisque/",
+    "page": "https://www.allrecipes.com/recipe/234914/how-to-make-tomato-bisque/",
     "image": "https://www.allrecipes.com/thmb/A1usOBLEyhr0Kkyv344uIYRnL8s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/4401466-262916b366774b28b9618ac5dec256aa.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "tablespoon" },
@@ -2044,7 +2044,7 @@
   },
   {
     "name": "Slow-Cooker Chicken Tortilla Soup",
-    "link": "https://www.allrecipes.com/recipe/89539/slow-cooker-chicken-tortilla-soup/",
+    "page": "https://www.allrecipes.com/recipe/89539/slow-cooker-chicken-tortilla-soup/",
     "image": "https://www.allrecipes.com/thmb/-iGkkdWt4w-_WFyI2Ax7OKMdPaI=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/193211-Slow-Cookier-Chicken-Tortilla-Soup-89539-CookinBug-2000-d38fb61c932d4e87b313d99f63469cc8.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "pound" },
@@ -2086,7 +2086,7 @@
   },
   {
     "name": "Cheeseburger Soup",
-    "link": "https://www.allrecipes.com/recipe/13062/cheeseburger-soup-i/",
+    "page": "https://www.allrecipes.com/recipe/13062/cheeseburger-soup-i/",
     "image": "https://www.allrecipes.com/thmb/3QZ2AiKtys_ArNrUKjI-rb4nfqY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/13062-cheeseburger-soup-3x4-638-45cf610a6271431aa5f60f3762bf0b5a.jpg",
     "ingredients": [
       { "quantity": "4", "unit": "tablespoons" },
@@ -2125,7 +2125,7 @@
   },
   {
     "name": "Pasta Fazool (Pasta e Fagioli)",
-    "link": "https://www.allrecipes.com/recipe/255823/pasta-fazool-pasta-e-fagioli/",
+    "page": "https://www.allrecipes.com/recipe/255823/pasta-fazool-pasta-e-fagioli/",
     "image": "https://www.allrecipes.com/thmb/f3HrjFCOATjOiaBOXXuap2mINUc=/282x188/filters:no_upscale():max_bytes(150000):strip_icc()/4064575-pasta-fazool-pasta-e-fagioli-Chef-John-1x1-1-3b09444d9d99494181825cda657f3d0f.jpg",
     "ingredients": [
       { "quantity": "1", "unit": "tablespoon" },
