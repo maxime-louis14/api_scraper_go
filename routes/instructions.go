@@ -2,6 +2,7 @@ package routes
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"log"
 	"os"
@@ -11,15 +12,7 @@ import (
 	"github.com/maxime-louis14/api-golang/models"
 )
 
-type Instruction struct {
-	ID          uint   `gorm:"primaryKey"`
-	Number      string `json:"number"`
-	Description string `json:"description"`
-}
 
-func CreateResponseInstruction(instructionModel models.Instruction) Instruction {
-	return Instruction{ID: instructionModel.ID, Number: instructionModel.Number, Description: instructionModel.Description}
-}
 
 func PostInstructions(c *fiber.Ctx) error {
 	// Ouvrir le fichier data.json
@@ -62,4 +55,25 @@ func GetInstructions(c *fiber.Ctx) error {
 		responseInstructions = append(responseInstructions, responseInstruction)
 	}
 	return c.Status(200).JSON(responseInstructions)
+}
+
+func findInstruction(id int, instruction *models.Instruction) error {
+	database.Database.Db.Find(&instruction, "id = ?", id)
+	if instruction.ID == 0 {
+		return errors.New("instructions does not exist")
+	}
+	return nil
+}
+
+func GetInstruction(c *fiber.Ctx) error {
+	id, err := c.ParamsInt("id")
+	var instruction models.Instruction
+	if err != nil {
+		return c.Status(400).JSON("Please ensure that !id is an interger")
+	}
+	if err := findInstruction(id, &instruction); err != nil {
+		return c.Status(400).JSON(err.Error())
+	}
+	responseInstruction := CreateResponseInstruction(instruction)
+	return c.Status(200).JSON(responseInstruction)
 }

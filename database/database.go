@@ -36,7 +36,5 @@ func ConnectDb() {
 	log.Println("Running Migrations")
 
 	db.AutoMigrate(&models.Order{}, &models.User{}, &models.Instruction{}, &models.Recette{}, &models.Ingredient{})
-	// db.Model(&models.Ingredient{}).Association("Recette")
-	// db.Model(&models.Instruction{}).Association("Recette")
 	Database = DbInstance{Db: db}
 }
