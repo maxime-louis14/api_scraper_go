@@ -3,9 +3,8 @@ package routes
 import (
 	"encoding/json"
 	"fmt"
-	"log"
+	"net/url"
 	"os"
-	"strings"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/maxime-louis14/api-golang/database"
@@ -171,31 +170,33 @@ func GetRecette(c *fiber.Ctx) error {
 }
 
 func GetRecetteByName(c *fiber.Ctx) error {
-	name := strings.ReplaceAll(c.Params("name"), "%20", " ")
+	name, err := url.PathUnescape(c.Params("name"))
+	if err != nil {
+		return err
+	}
 
-	// fmt.Printf("Searching for recipe with name: %s\n", name)
-
-	recette := models.Recette{}
-	err := database.Database.Db.
+	var recette models.Recette
+	err = database.Database.Db.
 		Preload("Instructions").
 		Preload("Ingredients").
-		Where("name LIKE ?", "%"+name+"%").
-		First(&recette)
+		Where("name = ?", name).
+		First(&recette).Error
 
 	if err != nil {
 		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{
-			"message": "Recipe not found",
+			"message": "recette not found",
 		})
 	}
-
-	log.Println(recette)
-
 	responseRecette := struct {
-		Recette      models.Recette       `json:"recette"`
+		Name         string               `json:"name"`
+		Image        string               `json:"image"`
+		Page         string               `json:"page"`
 		Ingredients  []models.Ingredient  `json:"ingredients"`
 		Instructions []models.Instruction `json:"instructions"`
 	}{
-		Recette:      recette,
+		Name:         recette.Name,
+		Image:        recette.Image,
+		Page:         recette.Page,
 		Ingredients:  recette.Ingredients,
 		Instructions: recette.Instructions,
 	}

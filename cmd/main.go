@@ -27,15 +27,22 @@ func setupRoutes(app *fiber.App) {
 	app.Get("/api/recettes/:id", routes.GetRecette)
 	app.Get("/api/recettes/name/:name", routes.GetRecetteByName)
 	app.Get("/api/recettes/ingredient/:ingredient", routes.GetRecettesIngredient)
-	// app.Get("/api/recettes/name/:name", routes.GetRecettesDetails)
+	
 
 }
 
 func main() {
+
+
+	
 	database.ConnectDb()
 	app := fiber.New()
 
 	setupRoutes(app)
 
 	log.Fatal(app.Listen(":3000"))
+}
+
+func SawgInit() {
+	panic("unimplemented")
 }
