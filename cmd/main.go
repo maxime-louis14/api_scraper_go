@@ -1,3 +1,11 @@
+// Package main provides ...
+//
+//     Schemes: http
+//     Host: localhost:3000
+//     BasePath: /api/v1
+//     Version: 1.0.0
+//
+// swagger:meta
 package main
 
 import (

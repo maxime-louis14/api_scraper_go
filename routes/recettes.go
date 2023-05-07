@@ -169,6 +169,31 @@ func GetRecette(c *fiber.Ctx) error {
 	return c.Status(200).JSON(responseRecette)
 }
 
+// ...
+
+// GetRecetteByName get recette by name
+//
+// swagger:operation GET /recettes/{name} recette getRecetteByName
+//
+// Get recette by name
+//
+// ---
+// produces:
+// - application/json
+// parameters:
+// - name: name
+//   in: path
+//   description: Name of the recette
+//   required: true
+//   type: string
+// responses:
+//   '200':
+//     description: Recette
+//     schema:
+//       "$ref": "#/definitions/Recette"
+//   '404':
+//     description: Recette not found
+
 func GetRecetteByName(c *fiber.Ctx) error {
 	name, err := url.PathUnescape(c.Params("name"))
 	if err != nil {
