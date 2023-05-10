@@ -246,7 +246,9 @@ func GetRecettesIngredient(c *fiber.Ctx) error {
 	}
 
 	responseRecettes := []struct {
-		Recette      models.Recette       `json:"recette"`
+		Name         string               `json:"name"`
+		Image        string               `json:"image"`
+		Page         string               `json:"page"`
 		Ingredients  []models.Ingredient  `json:"ingredients"`
 		Instructions []models.Instruction `json:"instructions"`
 	}{}
@@ -260,11 +262,15 @@ func GetRecettesIngredient(c *fiber.Ctx) error {
 		database.Database.Db.Model(&recette).Association("Instructions").Find(&instructions)
 
 		responseRecette := struct {
-			Recette      models.Recette       `json:"recette"`
+			Name         string               `json:"name"`
+			Image        string               `json:"image"`
+			Page         string               `json:"page"`
 			Ingredients  []models.Ingredient  `json:"ingredients"`
 			Instructions []models.Instruction `json:"instructions"`
 		}{
-			Recette:      recette,
+			Name:         recette.Name,
+			Image:        recette.Image,
+			Page:         recette.Page,
 			Ingredients:  ingredients,
 			Instructions: instructions,
 		}
