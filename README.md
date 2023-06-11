@@ -1,7 +1,7 @@
 
 ## Deployment
 
-Pour activer le scraper fait. Ou (dans le dossier ou se trouve le main.go)
+Pour activer le scraper fait.
 ```bash
 docker compose up -d
 ```
@@ -48,9 +48,9 @@ Voici la stack qui vous est **recommandée** pour le projet:
 
 ## 🔗 Links
 
-Vous pouvez retrouver les deux API API_Golang_mongodb et le scrapper_go
+Vous pouvez retrouver l'API API_Golang_mongodb et le scrapper_go
 
 [![API_Golang_mongodb](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/maxime-louis14/go_api_mongo_scrapper)
-[![API_golang_Mysql](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/maxime-louis14/scrapper_go)
+[![scrapper_go](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/maxime-louis14/scrapper_go)
 
 
